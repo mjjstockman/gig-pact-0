@@ -1,8 +1,8 @@
 ---
 name: sprint
 about: create sprints
-title: 'SPRINT: <#num>'
-labels: ''
+title: 'SPRINT <#num>:  <title>'
+labels: sprint
 assignees: ''
 
 ---
@@ -13,3 +13,11 @@ assignees: ''
 <dates>
 
 # related user stories
+[ ] <US link>
+[ ] <US link>
+[ ] <US link>
+
+# tasks
+[ ] <task details>
+[ ] <task details>
+[ ] <task details>
