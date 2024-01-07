@@ -544,6 +544,14 @@ Tried looking into the high and critical and seeing which ones I can using expo-
 This removed all critical security vulnerabilities and reduced the number of moderate and high issues.
 
 Looked into using tools such as [Snyk](https://snyk.io/) and [Dependabot](https://github.com/dependabot)
+
+Synk showed detailed breakdown of the vulnerabilities, as seen below:
+<img src="docs/images/readme/snyk-semver.png" alt="Screenshot from Synk showing explanation of the current security issues">
+
+From this I could tell that semver version 7.3.2 is vulnerable to Regular Expression Denial of Service (ReDoS). Research showed this was fixed in ver 7.5.2 so I updated to the latest version.
+
+On re-testing the project with Snyk, the issue was fixed and no other issues remained.
+<img src="docs/images/readme/snyk-no-issues.png" alt="Screenshot from Synk showing no security issues">
 !!!!
 
 # Deployment
