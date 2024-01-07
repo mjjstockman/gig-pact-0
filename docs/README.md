@@ -33,15 +33,17 @@ _Image created and taken from [Am I Responsive?](ami.responsivedesign.is)._
 5. [Future Features](#Features-to-Implement-in-the-future)
 6. [Testing](#Testing)
 7. [Bugs](#Bugs)
-8. [Deployment](#Deployment)
+8. [Lessons Learnt](#Lessons-Learnt)
+9. [Deployment](#Deployment)
    - [How the site was Deployed](#How-the-site-was-Deployed)
    - [How to Fork the Repository](#How-to-Fork-the-Repository)
    - [How to create a Clone](#How-to-create-a-Clone-using-SSH)
    - [Heroku](#How-to-create-a-Clone-using-SSH)
    - [Heroku](#How-to-create-a-Clone-using-SSH)
-9. [Credits](#Credits)
-   - [Images](#Images)
-   - [Acknowledgements](#Acknowledgements)
+10. [Credits](#Credits)
+
+- [Images](#Images)
+- [Acknowledgements](#Acknowledgements)
 
 ---
 
@@ -532,6 +534,17 @@ A package [webdriver-manager](https://pypi.org/project/webdriver-manager/) was a
 
 - Remove unused dependencies from requirements.txt
 - Check for unused CSS and JS
+
+# Lessons Learnt
+
+!!!!
+Struggling with security vulnerabilities due to dependencies.
+<img src="docs/images/readme/security-vulnerabilities.png" alt="Npm audit report showing 92 vulnerabilities, 1 low, 62 moderate, 19 high and 10 critical">
+Tried looking into the high and critical and seeing which ones I can using expo-cli or manually.
+This removed all critical security vulnerabilities and reduced the number of moderate and high issues.
+
+Looked into using tools such as [Snyk](https://snyk.io/) and [Dependabot](https://github.com/dependabot)
+!!!!
 
 # Deployment
 
